@@ -4,18 +4,25 @@ partial class Program
 {
     static void OpcionDescuento()
     {
-        // TODO de B: pedir total y porcentaje, llamar a AplicarDescuento y mostrar
+        double total = LeerDecimal("Total de la compra: ");
+        int porcentaje = LeerEntero("Porcentaje de descuento: ");
+        double totalFinal = AplicarDescuento(total, porcentaje);
+        Console.WriteLine($"Total con descuento: {totalFinal:N2}");
     }
+
 
     static double LeerDecimal(string mensaje)
     {
-        // TODO de B: igual que LeerEntero, con double.TryParse
-        return 0;
+        double numero;
+        do
+        {
+            Console.WriteLine(mensaje);
+        } while (!double.TryParse(Console.ReadLine(), out numero));
+        return numero;
     }
 
     static double AplicarDescuento(double total, int porcentaje)
     {
-        // TODO de B
-        return 0;
+        return total - total * porcentaje / 100;
     }
 }
