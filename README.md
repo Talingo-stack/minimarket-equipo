@@ -4,9 +4,9 @@ Sistema de consola en C# para gestionar compras en una tienda.
 
 ## Integrantes
 
-- Nombre 1
-- Nombre 2
-- Nombre 3
+- Starling Gonzalez 2026-1546
+- Francisco López 2026-1533
+- Reyson Rivera 2026-1527
 
 ## Descripción
 
